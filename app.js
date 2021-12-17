@@ -44,7 +44,7 @@ function validateInput(inputText) {
 var map = L.map('map', { zoomControl: false }).setView([37.38605, -122.08385], 13);
 
 var blackMarker = L.icon({
-    iconUrl: '/images/icon-location.svg',
+    iconUrl: './images/icon-location.svg',
     iconSize: [46, 56], // size of the icon
     iconAnchor: [23, 56], // point of the icon which will correspond to marker's location
 });
