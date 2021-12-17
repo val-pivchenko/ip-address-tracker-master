@@ -31,7 +31,7 @@ submitBtn.addEventListener('click', () => {
 
 updateMarker = (update_marker = [-33.665, 18.993]) => {
     map.setView(update_marker, 13);
-    L.marker(update_marker).addTo(map);
+    L.marker(update_marker, { icon: blackMarker }).addTo(map);
 }
 
 function validateInput(inputText) {

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin="" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | IP Address Tracker</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -29,9 +29,9 @@
   <div class="top">
     <p class="bold-white">IP Address Tracker</p>
     <p class="error">Enter valid IP</p>
-    <form action="javascript:void(0);">
-      <input value="" class="ip-input" type="text" placeholder="Search for any IP address or domain">
-      <button class="submit-btn" type="submit"><img src="/images/icon-arrow.svg" alt=""></button>
+    <form onsubmit="event.preventDefault();">
+      <input value="" class=" ip-input" type="text" placeholder="Search for any IP address or domain">
+      <button class="submit-btn" type="submit"><img src="./images/icon-arrow.svg" alt=""></button>
     </form>
 
   </div>
@@ -68,8 +68,8 @@
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
-  <script src='config.js'></script>
-  <script src="app.js"></script>
+  <script src='./config.js'></script>
+  <script src="./app.js"></script>
 </body>
 
 </html>

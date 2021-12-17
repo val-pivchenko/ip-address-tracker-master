@@ -18,7 +18,7 @@ body {
 }
 
 .top {
-    background-image: url(/images/pattern-bg.png);
+    background-image: url(./images/pattern-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 40%;
