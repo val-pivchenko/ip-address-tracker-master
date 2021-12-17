@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top">
+    <p class="bold-white">IP Address Tracker</p>
+    <p class="error">Enter valid IP</p>
+    <form action="javascript:void(0);">
+      <input value="" class="ip-input" type="text" placeholder="Search for any IP address or domain">
+      <button class="submit-btn" type="submit"><img src="/images/icon-arrow.svg" alt=""></button>
+    </form>
+
+  </div>
+  <div class="data">
+    <div class="data-content">
+      <p class="data-name">IP Address</p>
+      <p class="data-info" id="ip">8.8.8.8</p>
+    </div>
+    <div class="vertical"></div>
+    <div class="data-content">
+      <p class="data-name">Location</p>
+      <p class="data-info" id="location">Mountain View, US 94035</p>
+    </div>
+    <div class="vertical"></div>
+    <div class="data-content">
+      <p class="data-name">Timezone</p>
+      <p class="data-info" id="timezone">UTC -08:00</p>
+    </div>
+    <div class="vertical"></div>
+    <div class="data-content">
+      <p class="data-name">ISP</p>
+      <p class="data-info" id="isp">Google LLC</p>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/val-pivchenko">Val Pivchenko</a>.
+  </div>
+  <script type='text/javascript' src='config.js'></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="/app.js"></script>
+</body>
+
+</html>
