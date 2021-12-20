@@ -29,9 +29,9 @@ submitBtn.addEventListener('click', () => {
     }
 });
 
-updateMarker = (update_marker = [-33.665, 18.993]) => {
+updateMarker = (update_marker) => {
     map.setView(update_marker, 13);
-    L.marker(update_marker, { icon: blackMarker }).addTo(map);
+    marker = L.marker(update_marker, { icon: blackMarker }).addTo(map);
 }
 
 function validateInput(inputText) {
@@ -69,6 +69,7 @@ function getData() {
         ispText.innerText = data.isp;
         locationText.innerText = `${data.location.city}, ${data.location.country} ${data.location.postalCode}`;
         timezoneText.innerText = `UTC ${data.location.timezone}`;
+        marker.remove(map);
         updateMarker([data.location.lat, data.location.lng]);
     }).catch(error => {
         alert("Unable to get IP details")
